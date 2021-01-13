@@ -9,10 +9,12 @@
     width: 480px;
   }
 
+  // TABLET
   @media screen and (min-width: 768px) {
     width: 768px;
   }
 
+  // DESCKTOP
   @media screen and (min-width: 1200px) {
     width: 1200px;
   }

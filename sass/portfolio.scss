@@ -1,0 +1,23 @@
+// Подключение переменных
+@import "./utils/variables";
+
+// Подключение нормалайз
+@import "./base/normalize";
+
+// Подключение блоков
+@import "./base/common";
+
+// Подключение стилей контейнера
+@import "./base/container";
+
+// Подключение шрифтов
+@import "./utils/fonts";
+
+// Шапка
+@import "./components/header";
+
+//Портфолио
+@import "./components/_portfolio.scss";
+
+//Футер
+@import "./components/footer";

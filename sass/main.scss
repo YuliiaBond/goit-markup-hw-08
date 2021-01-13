@@ -1,0 +1,38 @@
+// Подключение переменных
+@import "./utils/variables";
+
+// Подключение нормалайз
+@import "./base/normalize";
+
+// Подключение блоков
+@import "./base/common";
+
+// Подключение стилей контейнера
+@import "./base/container";
+
+// Подключение шрифтов
+@import "./utils/fonts";
+
+// Шапка
+@import "./components/header";
+
+// Герой
+@import "./components/hero";
+
+//Особенности работы
+@import "./components/features";
+
+//Чем мы занимаемся
+@import "./components/workes";
+
+//Наша команда
+@import "./components/team";
+
+//Постоянные клиенты
+@import "./components/clients";
+
+//Футер
+@import "./components/footer";
+
+//Модальное окно
+@import "./components/modal";

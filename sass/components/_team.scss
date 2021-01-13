@@ -1,0 +1,80 @@
+.team-container {
+  background: $btn-color;
+  /* width: 1600px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team {
+  display: flex;
+}
+.team .item:not(:last-of-type) {
+  margin-right: 30px;
+}
+.team .item {
+  width: 270px;
+  padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: $primary-bg-color;
+}
+.team-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-text {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  height: 44px;
+}
+.instagram,
+.twitter,
+.facebook,
+.linkedin {
+  margin: 0;
+  padding: 0;
+  fill: $social-color;
+}
+.social-link {
+  display: flex;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    width: 44px;
+    height: 44px;
+    border: 1px soli transparent;
+    border-radius: 50%;
+  }
+
+  &:hover .instagram,
+  &:focus .instagram,
+  &:hover .twitter,
+  &:focus .twitter,
+  &:hover .facebook,
+  &:focus .facebook,
+  &:hover .linkedin,
+  &:focus .linkedin {
+    color: $accent-color;
+    fill: $primary-bg-color;
+    transition: color 250ms $timing-function, fill 250ms $timing-function;
+  }
+}

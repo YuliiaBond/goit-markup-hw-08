@@ -1,0 +1,39 @@
+.features-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.features {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.features-icon {
+  width: 270px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: $btn-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.features .item {
+  width: 270px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.features-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+}

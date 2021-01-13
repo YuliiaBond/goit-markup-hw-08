@@ -1,0 +1,88 @@
+.clients-container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+}
+.clients {
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+.clients-list:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-list {
+  width: 170px;
+  height: 90px;
+  border: 1px solid $social-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  align-content: center;
+}
+.logo-1,
+.logo-2,
+.logo-3,
+.logo-4,
+.logo-5,
+.logo-6 {
+  fill: $social-color;
+}
+.clients-list a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    transition: color 250ms $timing-function;
+  }
+
+  &:hover .logo-1,
+  &:hover .logo-2,
+  &:hover .logo-3,
+  &:hover .logo-4,
+  &:hover .logo-5,
+  &:hover .logo-6,
+  &:focus .logo-1,
+  &:focus .logo-2,
+  &:focus .logo-3,
+  &:focus .logo-4,
+  &:focus .logo-5,
+  &:focus .logo-6 {
+    --color2: $accent-color;
+    --color4: $accent-color;
+    fill: $accent-color;
+    transition: --color2 250ms $timing-function, --color4 250ms $timing-function,
+      fill 250ms $timing-function;
+  }
+}
+
+// .client-link:hover .logo-1,
+// .client-link:hover .logo-2,
+// .client-link:hover .logo-3,
+// .client-link:hover .logo-4,
+// .client-link:hover .logo-5,
+// .client-link:hover .logo-6,
+// .client-link:focus .logo-1,
+// .client-link:focus .logo-2,
+// .client-link:focus .logo-3,
+// .client-link:focus .logo-4,
+// .client-link:focus .logo-5,
+// .client-link:focus .logo-6 {
+//   --color2: $accent-color;
+//   --color4: $accent-color;
+//   fill: $accent-color;
+//   transition: --color2 250ms $timing-function, --color4 250ms $timing-function,
+//     fill 250ms $timing-function;
+// }

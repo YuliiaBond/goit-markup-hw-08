@@ -330,6 +330,24 @@ p {
   margin-left: auto;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 /* roboto-regular - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
@@ -442,10 +460,20 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding-bottom: 56px;
+}
+
+@media screen and (min-width: 768px) {
+  .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .btn {
@@ -480,17 +508,21 @@ p {
 }
 
 .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .project-card {
   width: 370px;
-  margin: 15px;
   /* flex-basis: calc(100% / 3-15px); */
 }
 
@@ -608,6 +640,16 @@ section {
   display: block;
   color: #ffffff;
   margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .contacte {

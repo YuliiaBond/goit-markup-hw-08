@@ -6,6 +6,11 @@
   // display: flex;
   margin-right: -15px;
   margin-left: -15px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .features-icon {
   width: 270px;

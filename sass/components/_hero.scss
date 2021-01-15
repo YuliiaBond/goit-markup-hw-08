@@ -2,13 +2,13 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 200px;
-  padding-top: 200px;
+  // padding-bottom: 200px;
+  // padding-top: 200px;
 
   background: {
     color: #2f303a;
     image: linear-gradient(to top, $hero-color, $hero-color),
-      url("../images/hero-foto.jpg");
+      url("../../images/Hero-mobile.jpg");
     repeat: no-repeat;
     position: center;
     size: cover;
@@ -16,37 +16,42 @@
   color: $primary-bg-color;
 
   text-align: center;
+
+  @media screen and (max-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2),
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../../images/hero-foto2x.jpg);
+    background-image: url(../../images/Hero-mobile@2x.jpg);
   }
 }
 
 @media screen and (min-width: 481px) {
   .hero {
-    background-image: url(../../images/hero-foto-table.jpg);
+    background-image: url(../../images/Hero-table.jpg);
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../../images/hero-foto-table2x.jpg);
+      background-image: url(../../images/Hero-table@2x.jpg);
     }
   }
 }
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: url(../../images/hero-foto-desktop.jpg);
+    background-image: url(../../images/Hero-desktop.jpg);
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .hero {
-      background-image: url(../../images/hero-foto-desktop2x.jpg);
+      background-image: url(../../images/Hero-desktop@2x.jpg);
     }
   }
 }
@@ -59,6 +64,16 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (max-width: 768px) {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+
+    text-align: center;
+  }
 }
 .hero-button {
   display: inline-block;
@@ -80,5 +95,9 @@
 
   &:focus {
     outline: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 200px;
   }
 }

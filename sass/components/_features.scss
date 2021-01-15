@@ -1,9 +1,9 @@
-.features-container {
-}
 .features {
-  // display: flex;
-  margin-right: -15px;
-  margin-left: -15px;
+  // display: block;
+  // justify-content: center;
+  // align-items: center;
+  // margin-right: -15px;
+  // margin-left: -15px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -11,9 +11,12 @@
   }
 }
 .features-icon {
-  width: 270px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  width: 450px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  // width: 270px;
+  // padding-top: 15px;
+  // padding-bottom: 15px;
   border: 1px solid transparent;
   border-radius: 4px;
   background-color: $btn-color;
@@ -21,14 +24,18 @@
   align-items: center;
   justify-content: center;
 }
-.features .item {
-  width: 270px;
-  margin-right: 15px;
-  margin-left: 15px;
+.features-item:not(:last-child) {
+  margin-bottom: 30px;
+  // width: 270px;
+
+  // margin-right: 15px;
+  // margin-left: 15px;
 }
 .features-title {
   margin-top: 30px;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 
   color: $title-text-color;
   font-weight: 700;

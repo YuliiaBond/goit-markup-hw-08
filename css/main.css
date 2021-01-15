@@ -872,17 +872,17 @@ header {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
 .clients {
-  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -895,12 +895,8 @@ header {
   }
 }
 
-.clients-list:not(:last-child) {
-  margin-right: 30px;
-}
-
 .clients-list {
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   -webkit-box-sizing: border-box;
@@ -908,6 +904,14 @@ header {
   border-radius: 4px;
   -ms-flex-line-pack: center;
       align-content: center;
+}
+
+.clients-list:nth-child(2n + 1) {
+  margin-right: 15px;
+}
+
+.clients-list:nth-child(-n + 4) {
+  margin-bottom: 30px;
 }
 
 .logo-1,

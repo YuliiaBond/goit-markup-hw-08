@@ -1,34 +1,37 @@
-.clients-container {
-}
-.clients-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: $title-text-color;
-}
 .clients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  // margin-right: -15px;
+  // margin-left: -15px;
+
   // display: inline-flex;
   // justify-content: space-between;
-  padding-top: 50px;
+  // padding-top: 50px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
 }
-.clients-list:not(:last-child) {
-  margin-right: 30px;
-}
+// .clients-list:not(:last-child) {
+//   margin-right: 30px;
+// }
 .clients-list {
-  width: 170px;
+  width: 210px;
+  // width: 170px;
   height: 90px;
   border: 1px solid $social-color;
   box-sizing: border-box;
   border-radius: 4px;
   align-content: center;
+}
+.clients-list:nth-child(2n + 1) {
+  margin-right: 15px;
+}
+.clients-list:nth-child(-n + 4) {
+  margin-bottom: 30px;
 }
 .logo-1,
 .logo-2,

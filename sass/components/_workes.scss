@@ -1,5 +1,9 @@
 .workes-container {
   padding-bottom: 94px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 // .workes {
 //   display: flex;

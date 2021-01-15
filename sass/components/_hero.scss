@@ -18,6 +18,39 @@
   text-align: center;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/hero-foto2x.jpg);
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: url(../../images/hero-foto-table.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../images/hero-foto-table2x.jpg);
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero {
+    background-image: url(../../images/hero-foto-desktop.jpg);
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: url(../../images/hero-foto-desktop2x.jpg);
+    }
+  }
+}
+
 .hero-title {
   margin-bottom: 45px;
 

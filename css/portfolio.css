@@ -317,6 +317,12 @@ p {
   margin-bottom: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*Section*/
 .section-title {
   margin-bottom: 50px;

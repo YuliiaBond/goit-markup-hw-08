@@ -321,16 +321,21 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Section*/
 .section-title {
-  margin-bottom: 50px;
-  color: #212121;
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .container {

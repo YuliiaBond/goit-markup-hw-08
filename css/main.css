@@ -321,16 +321,21 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*Section*/
 .section-title {
-  margin-bottom: 50px;
-  color: #212121;
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
 }
 
 .container {
@@ -764,8 +769,6 @@ header {
 .team-container {
   background: #f5f4fa;
   /* width: 1600px; */
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -778,44 +781,55 @@ header {
   }
 }
 
-.team .item:not(:last-of-type) {
-  margin-right: 30px;
-}
-
-.team .item {
-  width: 270px;
-  padding-bottom: 30px;
+.team-item {
+  width: 450px;
+  padding-bottom: 24px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
 
+.team-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .team-title {
   margin-top: 30px;
   margin-bottom: 10px;
   color: #212121;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team-text {
   margin-bottom: 16px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 44px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .instagram,

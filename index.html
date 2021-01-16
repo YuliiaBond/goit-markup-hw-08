@@ -139,13 +139,33 @@
             <h2 class="section-title teams">Наша команда</h2>
             <ul class="team">
                     <li class="team-item">
-                        <img  
-                        alt="Игорь Демьяненко" 
-                        srcset="./images/foto1-mobile.jpg 1x,
-                        ./images/foto1@2x-mobile.jpg 2x"
-                        src="./images/foto1-mobile.jpg"
-                        sizes="(min-width: 768px) 25vw, (min-width: 480px) 50vw, 100vw" 
-                        >
+                        <picture>
+                            <source
+                                srcset="
+                                    ./images/desktop/foto1-desktop.jpg 1x,
+                                    ./images/desktop/foto1@2x-desktop.jpg 2x                          ./
+                                "
+                                media="(min-width: 1200px)"
+                            >
+                            <source
+                                srcset="
+                                    ./images/table/foto1-table.jpg 1x,
+                                    ./images/table/foto1@2x-table.jpg 2x
+                                "
+                                media="(min-width: 768px)"    
+                            >
+                            <source
+                                srcset="
+                                    ./images/mobile/foto1-mobile.jpg 1x,
+                                    ./images/mobile/foto1@2x-mobile.jpg 2x
+                                "
+                                media="(max-width: 767px)"
+                            >
+                             <img                         
+                                src="./images/desktop/foto1-desktop.jpg"
+                                alt="Игорь Демьяненко"                    
+                            >
+                        </picture>
                         <h3 class="team-title">Игорь Демьяненко</h3>
                         <p class="team-text">Product Designer</p>
                         <ul class="social">
@@ -180,12 +200,21 @@
                         </ul>
                     </li>
                     <li class="team-item">
-                        <img 
-                        alt="Ольга Репина" 
-                         srcset="./images/foto2-mobile.jpg 1x,
-                        ./images/foto2@2x-mobile.jpg 2x"
-                        src="./images/foto2-mobile.jpg" 
-                        >
+                        <picture>
+                            <source srcset="
+                                                            ./images/desktop/foto2-desktop.jpg 1x,
+                                                            ./images/desktop/foto2@2x-desktop.jpg 2x                          ./
+                                                        " media="(min-width: 1200px)">
+                            <source srcset="
+                                                            ./images/table/foto2-table.jpg 1x,
+                                                            ./images/table/foto2@2x-table.jpg 2x
+                                                        " media="(min-width: 768px)">
+                            <source srcset="
+                                                            ./images/mobile/foto2-mobile.jpg 1x,
+                                                            ./images/mobile/foto2@2x-mobile.jpg 2x
+                                                        " media="(max-width: 767px)">
+                            <img src="./images/desktop/foto2-desktop.jpg" alt="Ольга Репина">
+                        </picture>
                         <h3 class="team-title">Ольга Репина</h3>
                         <p class="team-text">Frontend Developer</p>
                         <ul class="social">
@@ -220,12 +249,21 @@
                         </ul>
                     </li>
                     <li class="team-item">
-                        <img 
-                        alt="Николай Тарасов" 
-                         srcset="./images/foto3-mobile.jpg 1x,
-                        ./images/foto3@2x-mobile.jpg 2x"
-                        src="./images/foto3-mobile.jpg" 
-                        >
+                        <picture>
+                            <source srcset="
+                                ./images/desktop/foto3-desktop.jpg 1x,
+                                ./images/desktop/foto3@2x-desktop.jpg 2x                          ./
+                            " media="(min-width: 1200px)">
+                            <source srcset="
+                                ./images/table/foto3-table.jpg 1x,
+                                ./images/table/foto3@2x-table.jpg 2x
+                            " media="(min-width: 768px)">
+                            <source srcset="
+                                ./images/mobile/foto3-mobile.jpg 1x,
+                                ./images/mobile/foto3@2x-mobile.jpg 2x
+                            " media="(max-width: 767px)">
+                            <img src="./images/desktop/foto3-desktop.jpg" alt="Николай Тарасов">
+                        </picture>
                         <h3 class="team-title">Николай Тарасов</h3>
                         <p class="team-text">Marketing</p>
                         <ul class="social">
@@ -260,11 +298,21 @@
                         </ul>
                     </li>
                     <li class="team-item">
-                        <img 
-                        alt="Михаил Ермаков" 
-                         srcset="./images/foto4-mobile.jpg 1x,
-                        ./images/foto4@2x-mobile.jpg 2x"
-                        src="./images/foto4-mobile.jpg" >
+                        <picture>
+                            <source srcset="
+                                                            ./images/desktop/foto4-desktop.jpg 1x,
+                                                            ./images/desktop/foto4@2x-desktop.jpg 2x                          ./
+                                                        " media="(min-width: 1200px)">
+                            <source srcset="
+                                                            ./images/table/foto4-table.jpg 1x,
+                                                            ./images/table/foto4@2x-table.jpg 2x
+                                                        " media="(min-width: 768px)">
+                            <source srcset="
+                                                            ./images/mobile/foto4-mobile.jpg 1x,
+                                                            ./images/mobile/foto4@2x-mobile.jpg 2x
+                                                        " media="(max-width: 767px)">
+                            <img src="./images/desktop/foto4-desktop.jpg" alt="Михаил Ермаков">
+                        </picture>
                         <h3 class="team-title">Михаил Ермаков</h3>
                         <p class="team-text">UI Designer</p>
                         <ul class="social">

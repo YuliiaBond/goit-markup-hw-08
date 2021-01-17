@@ -351,7 +351,6 @@ img {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 3px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -459,6 +458,24 @@ header {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -931,6 +948,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .footer {
+    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -943,6 +961,7 @@ header {
 
 @media screen and (min-width: 1200px) {
   .footer {
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
     display: -webkit-box;

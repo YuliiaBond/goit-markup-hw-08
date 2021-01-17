@@ -351,7 +351,6 @@ img {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  outline: 3px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -459,6 +458,24 @@ header {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 480px) {
+  header {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  header {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -714,8 +731,8 @@ header {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/mobile/Hero-mobile.jpg");
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/mobile/Hero-mobile.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/mobile/Hero-mobile.jpg");
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/Hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1220,6 +1237,7 @@ header {
 
 @media screen and (min-width: 768px) {
   .footer {
+    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1232,6 +1250,7 @@ header {
 
 @media screen and (min-width: 1200px) {
   .footer {
+    width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
     display: -webkit-box;

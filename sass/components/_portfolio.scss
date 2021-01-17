@@ -1,16 +1,14 @@
 .projects-container {
-  padding-top: 94px;
   border-top: 1px solid #ececec;
 }
 .buttons {
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
-  padding-bottom: 56px;
-
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    margin-bottom: 56px;
   }
 }
 .btn {
@@ -39,24 +37,48 @@
       background-color 250ms $timing-function, box-shadow 250ms $timing-function;
   }
 }
-.buttons li:not(:last-child) {
-  margin-right: 8px;
+.buttons li {
+  margin-bottom: 30px;
+
+  &:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .projects {
-  // display: flex;
-  // flex-wrap: wrap;
-  margin: -15px;
+  display: block;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+  }
 }
 .project-card {
-  width: 370px;
-  // margin: 15px;
-  /* flex-basis: calc(100% / 3-15px); */
+  margin-bottom: 30px;
+  width: 450px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    margin-right: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+    margin: 15px;
+  }
 }
 .project-info {
   border-right: 1px solid $porfolio-card-color;
@@ -140,7 +162,4 @@
   color: $primary-text-color;
   font-size: 16px;
   line-height: 1.88;
-}
-section {
-  padding-bottom: 94px;
 }

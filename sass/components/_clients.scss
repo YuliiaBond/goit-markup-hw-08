@@ -3,36 +3,54 @@
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  // margin-right: -15px;
-  // margin-left: -15px;
-
-  // display: inline-flex;
-  // justify-content: space-between;
-  // padding-top: 50px;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
+  @media screen and (min-width: 1200px) {
+    display: inline-flex;
+    justify-content: space-between;
+  }
 }
-// .clients-list:not(:last-child) {
-//   margin-right: 30px;
-// }
 .clients-list {
   width: 210px;
-  // width: 170px;
   height: 90px;
   border: 1px solid $social-color;
   box-sizing: border-box;
   border-radius: 4px;
   align-content: center;
+
+  @media screen and (max-width: 767px) {
+    &:nth-child(2n + 1) {
+      margin-right: 15px;
+    }
+
+    &:nth-child(-n + 4) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 90px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
-.clients-list:nth-child(2n + 1) {
-  margin-right: 15px;
-}
-.clients-list:nth-child(-n + 4) {
-  margin-bottom: 30px;
-}
+
 .logo-1,
 .logo-2,
 .logo-3,
@@ -73,22 +91,3 @@
       fill 250ms $timing-function;
   }
 }
-
-// .client-link:hover .logo-1,
-// .client-link:hover .logo-2,
-// .client-link:hover .logo-3,
-// .client-link:hover .logo-4,
-// .client-link:hover .logo-5,
-// .client-link:hover .logo-6,
-// .client-link:focus .logo-1,
-// .client-link:focus .logo-2,
-// .client-link:focus .logo-3,
-// .client-link:focus .logo-4,
-// .client-link:focus .logo-5,
-// .client-link:focus .logo-6 {
-//   --color2: $accent-color;
-//   --color4: $accent-color;
-//   fill: $accent-color;
-//   transition: --color2 250ms $timing-function, --color4 250ms $timing-function,
-//     fill 250ms $timing-function;
-// }

@@ -24,8 +24,9 @@
 
 .menu-container {
   background-color: $primary-bg-color;
-  padding: 20px;
-  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   font-size: 20px;
 
   @media screen and (max-width: 767px) {
@@ -34,6 +35,10 @@
     top: 100%;
     left: 0;
     width: 100%;
+
+    border-top: 1px solid #ececec;
+
+    text-align: center;
 
     &.is-open {
       display: block;
@@ -44,13 +49,6 @@
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+    padding: 0;
   }
-}
-
-.navigation {
-  outline: 1px solid teal;
-}
-
-.contacts {
-  outline: 1px solid orange;
 }

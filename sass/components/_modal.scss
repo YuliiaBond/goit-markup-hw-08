@@ -7,13 +7,18 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
+  z-index: 999;
   transition: opacity 250ms $timing-function;
 
   padding: 93px 15px;
 
   overflow-y: scroll;
+
   @media screen and (min-width: 768px) {
     padding: 208px 159px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0;
   }
 }
 .backdrop.is-hidden {
@@ -23,24 +28,27 @@
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.9);
 }
+.modal-svg {
+  position: relative;
+}
 .modal {
-  @media screen and (min-width: 768px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    transition: transform 250ms $timing-function;
-
-    max-width: 450px;
-    width: 100%;
-  }
-
-  min-width: 100%;
+  min-width: 450px;
   min-height: 581px;
   background-color: $primary-bg-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $timing-function;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+  }
 }
 .btn-modal {
   position: absolute;
@@ -165,7 +173,10 @@ textarea:focus {
   display: inline-block;
   align-items: center;
   margin-bottom: 30px;
-  padding-left: 15px;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 15px;
+  }
 }
 .check-box {
   -webkit-appearance: none;
@@ -185,14 +196,19 @@ textarea:focus {
   align-items: center;
   cursor: pointer;
 }
-.check-box span {
-  font-weight: normal;
-  font-size: 14px;
+.check-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
   line-height: 1.71;
 
   letter-spacing: 0.03em;
 
   color: $primary-text-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 .form-link {
   color: $accent-color;

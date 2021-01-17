@@ -2,25 +2,22 @@
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  // padding-bottom: 200px;
-  // padding-top: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   background: {
     color: #2f303a;
     image: linear-gradient(to top, $hero-color, $hero-color),
-      url("../../images/desktop/Hero-desktop.jpg");
+      url("../../images/mobile/Hero-mobile.jpg");
     repeat: no-repeat;
     position: center;
     size: cover;
   }
+
   color: $primary-bg-color;
 
   text-align: center;
 
-  @media screen and (max-width: 768px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -61,28 +58,27 @@
 }
 
 .hero-title {
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 
+  font-family: Roboto;
+  font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
+
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  @media screen and (max-width: 768px) {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-
-    text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 .hero-button {
   display: inline-block;
   padding: 10px 32px;
-  min-width: 136px;
+  min-width: 200px;
 
   background-color: $accent-color;
   color: $primary-bg-color;
@@ -99,9 +95,5 @@
 
   &:focus {
     outline: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    min-width: 200px;
   }
 }

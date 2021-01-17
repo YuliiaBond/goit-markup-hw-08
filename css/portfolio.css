@@ -338,6 +338,14 @@ img {
   color: #212121;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;

@@ -106,29 +106,45 @@
                 <ul class="workes">
                     <li class="item">
                         <div class="workes-box">
-                            <img 
-                                srcset="
-                                    ./images/img1.jpg 1x,
-                                    ./images/img1@2x.jpg 2x
-                                    " 
-                                src="./images/img1.jpg" 
-                                alt="Программирование" 
-                                width="370" 
-                                height="294"
-                                >
+                            <picture>
+                                <source srcset="
+                                    ./images/desktop/img1-desktop.jpg 1x,
+                                    ./images/desktop/img1@2x-desktop.jpg 2x
+                                    "
+                                     media="(min-width: 1200px)">
+                                
+                                    <img src="./images/desktop/img1-desktop.jpg" alt="Десктопные приложения">
+                            </picture>
+                            
                             <p class="workes-text">Десктопные приложения</p>
                         </div>   
                     </li>
                     <li class="item">
                         <div class="workes-box">
-                            <img src="./images/img2.jpg" alt="Приложение в телефоне и рабочий интерфейс" width="370" height="294">
+                            <picture>
+                                <source srcset="
+                                    ./images/desktop/img2-desktop.jpg 1x,
+                                    ./images/desktop/img2@2x-desktop.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)">
+                                    
+                                    <img src="./images/desktop/img2-desktop.jpg" alt="Мобильные приложения">
+                            </picture>
                             <p class="workes-text">Мобильные приложения</p>
                         </div>
                     </li>                        
                     <li class="item">
                         <div class="workes-box">
-                            <img src="./images/img3.jpg" alt="Цветовач палитра дизайнера" width="370" height="294">
-                            <p class="workes-text">Мобильные приложения</p>
+                            <picture>
+                                <source srcset="
+                                    ./images/desktop/img3-desktop.jpg 1x,
+                                    ./images/desktop/img3@2x-desktop.jpg 2x
+                                    " 
+                                    media="(min-width: 1200px)">
+                            
+                                    <img src="./images/desktop/img3-desktop.jpg" alt="Дизайнерские решения">
+                            </picture>
+                            <p class="workes-text">Дизайнерские решения</p>
                         </div>
                         </li>
                 </ul>

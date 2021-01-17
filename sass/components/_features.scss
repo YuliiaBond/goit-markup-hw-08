@@ -10,9 +10,6 @@
   }
 }
 .features-item {
-  // display: flex;
-  // flex-wrap: wrap;
-
   margin-right: 30px;
   margin-bottom: 30px;
 
@@ -45,7 +42,6 @@
   }
 }
 .features-icon {
-  // min-width: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,17 +52,10 @@
   border-radius: 4px;
   background-color: $btn-color;
 }
-// .features-item:not(:last-child) {
-//   margin-bottom: 30px;
-//   // width: 270px;
-
-//   // margin-right: 15px;
-//   // margin-left: 15px;
-// }
 .features-title {
   margin-top: 30px;
   margin-bottom: 10px;
-  display: flex;
+  display: block;
   justify-content: center;
 
   color: $title-text-color;

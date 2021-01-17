@@ -1,13 +1,11 @@
 .workes-container {
-  padding-bottom: 94px;
-
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
-// .workes {
-//   display: flex;
-// }
+.workes {
+  display: flex;
+}
 .workes .item:not(:last-of-type) {
   margin-right: 30px;
 }

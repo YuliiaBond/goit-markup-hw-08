@@ -338,6 +338,14 @@ img {
   color: #212121;
 }
 
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -870,9 +878,7 @@ header {
 .features-title {
   margin-top: 30px;
   margin-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -888,14 +894,16 @@ header {
   line-height: 1.71;
 }
 
-.workes-container {
-  padding-bottom: 94px;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .workes-container {
     display: none;
   }
+}
+
+.workes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .workes .item:not(:last-of-type) {

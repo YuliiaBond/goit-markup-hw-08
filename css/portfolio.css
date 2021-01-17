@@ -518,6 +518,10 @@ header {
   }
 }
 
+.site-nav .link {
+  color: #212121;
+}
+
 @media screen and (max-width: 767px) {
   .site-nav .link {
     font-family: Roboto;
@@ -531,7 +535,10 @@ header {
 
 @media screen and (min-width: 768px) {
   .site-nav .link {
-    display: inline-block;
+    display: block;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
@@ -600,6 +607,8 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 

@@ -1,6 +1,6 @@
 .footer {
   background-color: $bg-color;
-  /* width: 1600px; */
+  max-width: 1600px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -9,22 +9,28 @@
   padding-bottom: 60px;
 
   text-align: center;
-}
-// .footer {
-//   display: block;
-//   align-items: center;
-//   justify-content: center;
 
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-// }
-.footer-content {
-  // margin-left: auto;
-  // margin-right: auto;
-  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+  }
 }
+.footer-content {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+
 .footer-logo {
   // margin-right: auto;
   // margin-left: auto;
@@ -85,12 +91,13 @@
 }
 
 .resources {
-  margin-bottom: 60px;
-  // display: inline-block;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
 }
 .resources-title {
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   font-weight: bold;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -148,16 +155,19 @@
 .subscription-btns {
   margin-top: 20px;
 
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .subscription input {
   padding: 15px;
-  margin-right: 12px;
   font-size: 16px;
   line-height: 1.25;
   width: 450px;
-  // width: 358px;
+
   color: $primary-bg-color;
   font-weight: 400;
   background-color: $bg-color;
@@ -165,6 +175,12 @@
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+  }
 }
 .subscription input::placeholder {
   display: flex;
@@ -205,6 +221,10 @@
 
   color: $primary-bg-color;
   cursor: pointer;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 .send {
   height: 24px;

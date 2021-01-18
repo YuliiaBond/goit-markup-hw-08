@@ -351,6 +351,7 @@ img {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  outline: 3px solid red;
 }
 
 @media screen and (min-width: 480px) {
@@ -452,29 +453,17 @@ img {
   /* Legacy iOS */
 }
 
-header {
+header .container {
   position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #ececec;
+  z-index: 999;
 }
 
-@media screen and (min-width: 480px) {
-  header {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  header {
-    width: 1200px;
+@media screen and (max-width: 767px) {
+  header .container {
+    width: 100%;
   }
 }
 

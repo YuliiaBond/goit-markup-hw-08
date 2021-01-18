@@ -971,7 +971,6 @@ header .container {
 
 .team-container {
   background: #f5f4fa;
-  max-width: 1600px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1247,7 +1246,6 @@ header .container {
 
 .footer {
   background-color: #2f303a;
-  max-width: 1600px;
   text-align: center;
 }
 

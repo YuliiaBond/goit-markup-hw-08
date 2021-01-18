@@ -52,7 +52,8 @@
         </header>
     <main>
      <!--Наши проекты -->
-        <section class="container projects-container">
+        <section class="projects-container">
+            <div class="container">
                 <!-- <h1>Наши проекты</h1> -->
                 <ul class="buttons">
                     <li><button type="button" class="btn">Все</button></li>
@@ -295,66 +296,69 @@
                         </a>
                     </li>
                 </ul>
+            </div>
         </section>
     </main>
     <!-- Футер -->
     <footer class="footer">
-        <div class="footer-content">
-            <a href="#" class="logo footer-logo"><span>Web</span>Studio</a>
-            <address>
-                <ul class="contacte">
-                    <li class="contacte-item"><a href="#" class="address-link">г. Киев, пр-т Леси Украинки, 26</a></li>
-                    <li class="contacte-item"><a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
+        <div class="container">
+            <div class="footer-content">
+                <a href="#" class="logo footer-logo"><span>Web</span>Studio</a>
+                <address>
+                    <ul class="contacte">
+                        <li class="contacte-item"><a href="#" class="address-link">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="contacte-item"><a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
+                        </li>
+                        <li class="contacte-item"><a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+            <div class="resources">
+                <h3 class="resources-title">присоединяйтесь</h3>
+                <ul class="resources-list">
+                    <li class="resources-item">
+                        <a href="#" class="resources-link">
+                            <svg class="instagram" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
                     </li>
-                    <li class="contacte-item"><a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a></li>
+                    <li class="resources-item">
+                        <a href="#" class="resources-link">
+                            <svg class="twitter" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="resources-item">
+                        <a href="#" class="resources-link">
+                            <svg class="facebook" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="resources-item">
+                        <a href="#" class="resources-link">
+                            <svg class="linkedin" width="20" height="20">
+                                <use href="./images/sprite.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
                 </ul>
-            </address>
-        </div>
-        <div class="resources">
-            <h3 class="resources-title">присоединяйтесь</h3>
-            <ul class="resources-list">
-                <li class="resources-item">
-                    <a href="#" class="resources-link">
-                        <svg class="instagram" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="resources-item">
-                    <a href="#" class="resources-link">
-                        <svg class="twitter" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="resources-item">
-                    <a href="#" class="resources-link">
-                        <svg class="facebook" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="resources-item">
-                    <a href="#" class="resources-link">
-                        <svg class="linkedin" width="20" height="20">
-                            <use href="./images/sprite.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div>
-            <form action="#" class="subscription">
-                <label for="mail" class="subscription-text">Подпишитесь на рассылку</label>
-                <div class="subscription-btns">
-                    <input type="email" name="mail" placeholder="E-mail" autocomplete="off">
-                    <button type="submit">Подписаться
-                        <svg class="send" width="24" height="24">
-                            <use href="./images/sprite.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </div>
-            </form>
+            </div>
+            <div>
+                <form action="#" class="subscription">
+                    <label for="mail" class="subscription-text">Подпишитесь на рассылку</label>
+                    <div class="subscription-btns">
+                        <input type="email" name="mail" placeholder="E-mail" autocomplete="off">
+                        <button type="submit">Подписаться
+                            <svg class="send" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
         </footer>
 </body>

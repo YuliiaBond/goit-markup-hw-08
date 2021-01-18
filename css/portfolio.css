@@ -354,6 +354,13 @@ img {
   outline: 3px solid red;
 }
 
+@media screen and (max-width: 767px) {
+  .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -926,18 +933,11 @@ header .container {
 .footer {
   background-color: #2f303a;
   max-width: 1600px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
-    width: 768px;
+  .footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -949,17 +949,16 @@ header .container {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer {
-    width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    text-align: start;
   }
 }
 
@@ -1131,6 +1130,12 @@ header .container {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 480px) {
+  .subscription input {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscription input {
     width: 358px;
@@ -1223,6 +1228,12 @@ header .container {
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .subscription button {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {

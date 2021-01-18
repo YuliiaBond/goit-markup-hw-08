@@ -354,6 +354,13 @@ img {
   outline: 3px solid red;
 }
 
+@media screen and (max-width: 767px) {
+  .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -833,11 +840,16 @@ header .container {
 .features-item {
   margin-right: 30px;
   margin-bottom: 30px;
-  width: 100%;
 }
 
 .features-item:nth-last-child(-n + 1) {
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .features-item {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -895,9 +907,21 @@ header .container {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 767px) {
+  .features-title {
+    text-align: center;
+  }
+}
+
 .features-text {
   font-size: 14px;
   line-height: 1.71;
+}
+
+@media screen and (max-width: 767px) {
+  .features-text {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1133,7 +1157,16 @@ header .container {
       align-content: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 449px) {
+  .clients-list {
+    margin-bottom: 10px;
+  }
+  .clients-list:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 480px) {
   .clients-list:nth-child(2n + 1) {
     margin-right: 15px;
   }
@@ -1215,18 +1248,11 @@ header .container {
 .footer {
   background-color: #2f303a;
   max-width: 1600px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 60px;
-  padding-bottom: 60px;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
-    width: 768px;
+  .footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1238,17 +1264,16 @@ header .container {
 }
 
 @media screen and (min-width: 1200px) {
-  .footer {
-    width: 1200px;
-    padding-top: 94px;
-    padding-bottom: 94px;
+  .footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    text-align: start;
   }
 }
 
@@ -1420,6 +1445,12 @@ header .container {
   border-radius: 4px;
 }
 
+@media screen and (max-width: 480px) {
+  .subscription input {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .subscription input {
     width: 358px;
@@ -1512,6 +1543,12 @@ header .container {
   letter-spacing: 0.06em;
   color: #ffffff;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .subscription button {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1200px) {

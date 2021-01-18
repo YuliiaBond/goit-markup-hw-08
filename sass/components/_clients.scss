@@ -21,7 +21,14 @@
   border-radius: 4px;
   align-content: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 449px) {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
     &:nth-child(2n + 1) {
       margin-right: 15px;
     }

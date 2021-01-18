@@ -13,12 +13,14 @@
   margin-right: 30px;
   margin-bottom: 30px;
 
-  width: 100%;
+  // width: 100%;
 
   &:nth-last-child(-n + 1) {
     margin-bottom: 0;
   }
-
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: calc((100% - 30px) / 2);
     margin-right: 15px;
@@ -63,8 +65,16 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 .features-text {
   font-size: 14px;
   line-height: 1.71;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }

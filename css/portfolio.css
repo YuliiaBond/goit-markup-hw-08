@@ -773,15 +773,23 @@ header .container {
 }
 
 .buttons li {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
-.buttons li:nth-child(n + 4) {
+.buttons li:last-child {
   margin-bottom: 0;
 }
 
-.buttons li:not(:last-child) {
-  margin-right: 8px;
+@media screen and (min-width: 480px) {
+  .buttons li {
+    margin-bottom: 30px;
+  }
+  .buttons li:nth-child(n + 4) {
+    margin-bottom: 0;
+  }
+  .buttons li:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .projects {
@@ -805,12 +813,22 @@ header .container {
 }
 
 .project-card {
-  margin-bottom: 30px;
-  width: 450px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .project-card:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .project-card {
+    margin-bottom: 30px;
+    width: 450px;
+  }
+  .project-card:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

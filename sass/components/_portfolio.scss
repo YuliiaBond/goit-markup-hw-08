@@ -5,6 +5,7 @@
   margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
+
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -38,13 +39,19 @@
   }
 }
 .buttons li {
-  margin-bottom: 30px;
-
-  &:nth-child(n + 4) {
+  margin-bottom: 10px;
+  &:last-child {
     margin-bottom: 0;
   }
-  &:not(:last-child) {
-    margin-right: 8px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 30px;
+
+    &:nth-child(n + 4) {
+      margin-bottom: 0;
+    }
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
   }
 }
 
@@ -60,10 +67,17 @@
   }
 }
 .project-card {
-  margin-bottom: 30px;
-  width: 450px;
+  width: 100%;
+  margin-bottom: 10px;
   &:last-child {
     margin-bottom: 0;
+  }
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-bottom: 30px;
+    width: 450px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;

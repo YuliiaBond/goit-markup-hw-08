@@ -121,11 +121,6 @@ header .container {
   margin-left: auto;
   align-items: center;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-
   @media screen and (min-width: 1200px) {
     display: flex;
     padding-top: 0;

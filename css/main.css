@@ -1542,12 +1542,6 @@ header .container {
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
-  .subscription button {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .subscription button {
     margin-top: 0;
@@ -1608,6 +1602,12 @@ header .container {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    min-width: 100%;
+  }
 }
 
 @media screen and (min-width: 768px) {

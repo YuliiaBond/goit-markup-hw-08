@@ -1610,7 +1610,7 @@ header .container {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .modal {
     min-width: 450px;
     position: absolute;

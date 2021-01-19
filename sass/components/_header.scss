@@ -57,11 +57,11 @@ header .container {
 }
 .site-nav .link {
   color: $title-text-color;
+  font-weight: 500;
 
   @media screen and (max-width: 767px) {
     font-family: Roboto;
     font-style: normal;
-    font-weight: 500;
     font-size: 18px;
     line-height: 1.17;
 

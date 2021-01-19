@@ -540,13 +540,13 @@ header .container {
 
 .site-nav .link {
   color: #212121;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
   .site-nav .link {
     font-family: Roboto;
     font-style: normal;
-    font-weight: 500;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.02em;
@@ -744,6 +744,12 @@ header .container {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .buttons {
+    margin-bottom: 50px;
+  }
+}
+
 .btn {
   display: inline-block;
   padding: 6px 22px;
@@ -794,6 +800,12 @@ header .container {
   }
   .buttons li:not(:last-child) {
     margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .buttons li {
+    margin-bottom: 0;
   }
 }
 
@@ -975,9 +987,7 @@ header .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    text-align: start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
